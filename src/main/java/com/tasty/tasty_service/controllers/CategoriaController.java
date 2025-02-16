@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/categorias")
-@CrossOrigin("*") // Permite llamadas desde el frontend
+@CrossOrigin("*") 
 public class CategoriaController {
 
     private final CategoriaService categoriaService;
