@@ -1,4 +1,6 @@
 package com.tasty.tasty_service.entities;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,5 +27,7 @@ public class Producto {
 
     @ManyToOne
     @JoinColumn(name = "categoria_id", nullable = false)
+    @JsonBackReference
     private Categoria categoria;
+
 }
